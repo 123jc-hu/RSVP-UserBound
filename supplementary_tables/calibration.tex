@@ -1,0 +1,26 @@
+\begin{table}[H]
+\centering
+\caption{Calibrated references on the second half of each user's trials (CAS: second session). $\Delta$: difference from calibration-free PRISM on the same trials. $\rho$: Spearman correlation with calibration-free PRISM. Ovl.: fraction of PRISM's calibration-free lowest quartile still in the lowest quartile (chance 0.25, 0.29, 0.25). Q1: BA of PRISM's calibration-free lowest-quartile users.}
+\label{tab:supp-calibration}
+\tiny
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}llrrrrrrrrrrrrrrr@{}}
+\toprule
+& & \multicolumn{5}{c}{THU} & \multicolumn{5}{c}{CAS} & \multicolumn{5}{c}{THINGS-EEG} \\
+\cmidrule(lr){3-7}\cmidrule(lr){8-12}\cmidrule(lr){13-17}
+Reference & Calibration & BA & $\Delta$ & $\rho$ & Ovl. & Q1 & BA & $\Delta$ & $\rho$ & Ovl. & Q1 & BA & $\Delta$ & $\rho$ & Ovl. & Q1 \\
+\midrule
+PRISM fine-tuned & first half & 0.890 & $+0.014$ & 0.88 & 0.88 & 0.823 & 0.878 & $+0.006$ & 0.72 & 0.75 & 0.816 & 0.834 & $+0.022$ & 0.92 & 0.82 & 0.735 \\
+PRISM fine-tuned & first 40 targets & 0.878 & $+0.002$ & 0.95 & 0.81 & 0.805 & 0.873 & $+0.002$ & 0.97 & 1.00 & 0.815 & 0.813 & $+0.000$ & 0.96 & 0.82 & 0.708 \\
+\midrule
+sLDA & first half & 0.880 & $+0.003$ & 0.74 & 0.62 & 0.832 & 0.804 & $-0.068$ & 0.60 & 0.50 & 0.714 & 0.811 & $-0.002$ & 0.69 & 0.73 & 0.725 \\
+sLDA & first 40 targets & 0.826 & $-0.050$ & 0.65 & 0.56 & 0.765 & 0.776 & $-0.096$ & 0.49 & 0.50 & 0.679 & 0.712 & $-0.101$ & 0.69 & 0.64 & 0.644 \\
+\midrule
+xDAWN-RG & first half & 0.672 & $-0.204$ & 0.31 & 0.50 & 0.608 & 0.520 & $-0.352$ & -0.24 & 0.25 & 0.569 & 0.780 & $-0.033$ & 0.53 & 0.64 & 0.695 \\
+xDAWN-RG & first 40 targets & 0.623 & $-0.253$ & 0.40 & 0.50 & 0.563 & 0.505 & $-0.366$ & -0.29 & 0.00 & 0.517 & 0.671 & $-0.142$ & 0.30 & 0.55 & 0.618 \\
+\midrule
+PRISM calibration-free & --- & 0.876 & --- & --- & --- & 0.796 & 0.872 & --- & --- & --- & 0.820 & 0.813 & --- & --- & --- & 0.691 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

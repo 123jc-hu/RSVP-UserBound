@@ -1,0 +1,35 @@
+\begin{table}[H]
+\centering
+\caption{Association of PRISM's per-participant gain over each decoder with the two descriptors (pooled, $n=122$, dataset fixed effects). $\beta$: change in gain per within-dataset standard deviation of the descriptor. $q$: Benjamini--Hochberg correction over the 20 tests of each scale.}
+\label{tab:supp-gains}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Scale & Comparator & $\beta_{s_\mathrm{ERP}}$ & $p$ & $q$ & $\beta_{r_\mathrm{topo}}$ & $p$ & $q$ \\
+\midrule
+\multirow{10}{*}{BA} & xDAWN-RG & -0.0034 & 0.255 & 0.425 & -0.0045 & 0.126 & 0.235 \\
+ & EEGNet & -0.0042 & 0.070 & 0.235 & +0.0001 & 0.977 & 0.977 \\
+ & PLNet & -0.0089 & $8.8\times10^{-4}$ & 0.018 & -0.0024 & 0.365 & 0.521 \\
+ & PPNN & -0.0033 & 0.108 & 0.235 & -0.0020 & 0.329 & 0.506 \\
+ & DC-tCNN & -0.0033 & 0.129 & 0.235 & -0.0043 & 0.052 & 0.235 \\
+ & EEGConformer & -0.0064 & 0.029 & 0.235 & -0.0046 & 0.115 & 0.235 \\
+ & EEGTransferNet & -0.0049 & 0.054 & 0.235 & -0.0006 & 0.817 & 0.860 \\
+ & EEG-DG & -0.0034 & 0.111 & 0.235 & -0.0017 & 0.418 & 0.557 \\
+ & SCLDGN & -0.0037 & 0.081 & 0.235 & -0.0006 & 0.784 & 0.860 \\
+ & KnIFE & -0.0010 & 0.725 & 0.853 & -0.0022 & 0.446 & 0.558 \\
+\midrule
+\multirow{10}{*}{logit} & xDAWN-RG & +0.0026 & 0.910 & 0.910 & -0.0176 & 0.441 & 0.738 \\
+ & EEGNet & +0.0269 & 0.142 & 0.470 & +0.0337 & 0.067 & 0.446 \\
+ & PLNet & -0.0273 & 0.167 & 0.470 & +0.0071 & 0.719 & 0.799 \\
+ & PPNN & -0.0151 & 0.312 & 0.679 & -0.0077 & 0.605 & 0.738 \\
+ & DC-tCNN & -0.0083 & 0.618 & 0.738 & -0.0306 & 0.067 & 0.446 \\
+ & EEGConformer & -0.0196 & 0.339 & 0.679 & -0.0128 & 0.534 & 0.738 \\
+ & EEGTransferNet & +0.0258 & 0.188 & 0.470 & +0.0275 & 0.161 & 0.470 \\
+ & EEG-DG & +0.0042 & 0.787 & 0.828 & +0.0075 & 0.627 & 0.738 \\
+ & SCLDGN & +0.0097 & 0.545 & 0.738 & +0.0083 & 0.605 & 0.738 \\
+ & KnIFE & +0.0725 & 0.002 & 0.030 & +0.0296 & 0.187 & 0.470 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

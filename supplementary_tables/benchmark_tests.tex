@@ -1,0 +1,46 @@
+\begin{table}[H]
+\centering
+\caption{PRISM versus every other decoder (BA). One-sided participant-paired Wilcoxon tests with Benjamini--Hochberg correction over the ten comparisons within each dataset. $d_z$: mean paired difference divided by its standard deviation.}
+\label{tab:supp-benchmark-tests}
+\footnotesize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Dataset & Comparator & $\Delta$BA & Median $\Delta$ & $d_z$ & Wins & BH $q$ \\
+\midrule
+\multirow{10}{*}{THU} & xDAWN-RG & $+0.0309$ & $+0.0254$ & 0.91 & 56/64 & $3.9\times10^{-10}$ \\
+ & EEGNet & $+0.0295$ & $+0.0298$ & 1.33 & 60/64 & $2.2\times10^{-11}$ \\
+ & PLNet & $+0.0334$ & $+0.0307$ & 1.25 & 61/64 & $2.2\times10^{-11}$ \\
+ & PPNN & $+0.0125$ & $+0.0102$ & 0.63 & 52/64 & $2.5\times10^{-7}$ \\
+ & DC-tCNN & $+0.0133$ & $+0.0110$ & 0.55 & 47/64 & $4.2\times10^{-6}$ \\
+ & EEGConformer & $+0.0248$ & $+0.0198$ & 0.79 & 56/64 & $6.3\times10^{-9}$ \\
+ & EEGTransferNet & $+0.0318$ & $+0.0308$ & 1.30 & 59/64 & $2.2\times10^{-11}$ \\
+ & EEG-DG & $+0.0195$ & $+0.0173$ & 0.85 & 53/64 & $8.9\times10^{-9}$ \\
+ & SCLDGN & $+0.0152$ & $+0.0122$ & 0.85 & 54/64 & $7.4\times10^{-9}$ \\
+ & KnIFE & $+0.0655$ & $+0.0616$ & 2.26 & 64/64 & $1.8\times10^{-11}$ \\
+\midrule
+\multirow{10}{*}{CAS} & xDAWN-RG & $+0.0338$ & $+0.0248$ & 1.27 & 14/14 & $1.0\times10^{-4}$ \\
+ & EEGNet & $+0.0383$ & $+0.0279$ & 1.09 & 14/14 & $1.0\times10^{-4}$ \\
+ & PLNet & $+0.0321$ & $+0.0240$ & 1.20 & 13/14 & $2.6\times10^{-4}$ \\
+ & PPNN & $+0.0192$ & $+0.0078$ & 0.68 & 12/14 & 0.005 \\
+ & DC-tCNN & $+0.0220$ & $+0.0127$ & 0.95 & 12/14 & $9.5\times10^{-4}$ \\
+ & EEGConformer & $+0.0571$ & $+0.0596$ & 1.56 & 14/14 & $1.0\times10^{-4}$ \\
+ & EEGTransferNet & $+0.0389$ & $+0.0269$ & 1.09 & 14/14 & $1.0\times10^{-4}$ \\
+ & EEG-DG & $+0.0209$ & $+0.0189$ & 1.18 & 13/14 & $7.6\times10^{-4}$ \\
+ & SCLDGN & $+0.0377$ & $+0.0262$ & 1.21 & 14/14 & $1.0\times10^{-4}$ \\
+ & KnIFE & $+0.0742$ & $+0.0782$ & 2.87 & 14/14 & $1.0\times10^{-4}$ \\
+\midrule
+\multirow{10}{*}{THINGS-EEG} & xDAWN-RG & $+0.0343$ & $+0.0348$ & 1.47 & 40/44 & $5.8\times10^{-11}$ \\
+ & EEGNet & $+0.0192$ & $+0.0205$ & 1.03 & 40/44 & $9.4\times10^{-8}$ \\
+ & PLNet & $+0.0320$ & $+0.0350$ & 1.09 & 40/44 & $1.6\times10^{-8}$ \\
+ & PPNN & $+0.0196$ & $+0.0184$ & 1.02 & 38/44 & $4.0\times10^{-9}$ \\
+ & DC-tCNN & $+0.0291$ & $+0.0308$ & 1.56 & 41/44 & $8.0\times10^{-12}$ \\
+ & EEGConformer & $+0.0204$ & $+0.0165$ & 0.81 & 35/44 & $4.6\times10^{-7}$ \\
+ & EEGTransferNet & $+0.0221$ & $+0.0179$ & 0.98 & 39/44 & $2.8\times10^{-8}$ \\
+ & EEG-DG & $+0.0144$ & $+0.0125$ & 0.71 & 35/44 & $2.8\times10^{-6}$ \\
+ & SCLDGN & $+0.0210$ & $+0.0220$ & 0.98 & 38/44 & $1.1\times10^{-7}$ \\
+ & KnIFE & $+0.0450$ & $+0.0465$ & 1.61 & 41/44 & $4.8\times10^{-11}$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\caption{PRISM ablations. $\Delta$: paired mean difference from the full model. $p_\mathrm{Holm}$: two-sided paired Wilcoxon test, Holm-corrected over the five ablations within each dataset.}
+\label{tab:supp-ablation}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+& \multicolumn{3}{c}{THU} & \multicolumn{3}{c}{CAS} & \multicolumn{3}{c}{THINGS-EEG} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Configuration & BA & $\Delta$ & $p_\mathrm{Holm}$ & BA & $\Delta$ & $p_\mathrm{Holm}$ & BA & $\Delta$ & $p_\mathrm{Holm}$ \\
+\midrule
+PRISM & 0.8735 & --- & --- & 0.8636 & --- & --- & 0.8261 & --- & --- \\
+\quad w/o grouped expansion & 0.8714 & $-0.0022$ & 0.775 & 0.8610 & $-0.0026$ & 0.583 & 0.8188 & $-0.0073$ & $4.5\times10^{-4}$ \\
+\quad w/o $\mathbf{W}_s$ & 0.8746 & $+0.0011$ & 1.000 & 0.8576 & $-0.0060$ & 0.459 & 0.8225 & $-0.0037$ & 0.024 \\
+\quad single-scale Stage~(iii) & 0.8733 & $-0.0002$ & 1.000 & 0.8496 & $-0.0141$ & 0.178 & 0.8239 & $-0.0022$ & 0.029 \\
+\quad single-scale Stage~(i) & 0.8693 & $-0.0043$ & 0.030 & 0.8540 & $-0.0096$ & 0.459 & 0.8177 & $-0.0085$ & $3.0\times10^{-5}$ \\
+\quad single-scale both stages & 0.8678 & $-0.0057$ & 0.003 & 0.8560 & $-0.0077$ & 0.176 & 0.8198 & $-0.0064$ & 0.011 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

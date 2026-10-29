@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\caption{Effect of source alignment relative to the unaligned backbone. $p$: two-sided paired Wilcoxon test; $\rho$: Spearman correlation of participant BA between the aligned and unaligned model.}
+\label{tab:supp-alignment}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+& \multicolumn{3}{c}{THU} & \multicolumn{3}{c}{CAS} & \multicolumn{3}{c}{THINGS-EEG} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Configuration & $\Delta$BA & $p$ & $\rho$ & $\Delta$BA & $p$ & $\rho$ & $\Delta$BA & $p$ & $\rho$ \\
+\midrule
+EEGNet$+$CORAL & $-0.0165$ & $2.6\times10^{-10}$ & 0.987 & $-0.0155$ & 0.003 & 0.921 & $-0.0138$ & $1.9\times10^{-6}$ & 0.964 \\
+EEGNet$+$DANN & $+0.0008$ & 0.440 & 0.993 & $-0.0030$ & 0.023 & 0.991 & $-0.0039$ & 0.002 & 0.991 \\
+EEGNet$+$MMD & $+0.0000$ & 0.813 & 0.997 & $-0.0002$ & 0.826 & 0.986 & $-0.0006$ & 0.326 & 0.996 \\
+PRISM$+$CORAL & $-0.0003$ & 0.459 & 0.998 & $-0.0004$ & 0.167 & 1.000 & $+0.0006$ & 0.160 & 0.999 \\
+PRISM$+$DANN & $+0.0004$ & 0.888 & 0.983 & $-0.0073$ & 0.104 & 0.970 & $+0.0006$ & 0.722 & 0.990 \\
+PRISM$+$MMD & $-0.0031$ & 0.006 & 0.980 & $-0.0017$ & 0.426 & 0.938 & $-0.0023$ & 0.107 & 0.989 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

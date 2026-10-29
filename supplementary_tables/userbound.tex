@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{Two-way decomposition of BA variance and consistency of participant rankings. Brackets: 95\% participant-bootstrap intervals (2{,}000 resamples). Spearman: mean (minimum) pairwise correlation. Overlap: mean fraction of PRISM's lowest-quartile participants in another configuration's lowest quartile (chance in parentheses). The alignment panel contains EEGNet and PRISM with and without CORAL, DANN, and MMD.}
+\label{tab:supp-userbound}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}llccccccc@{}}
+\toprule
+Panel & Dataset & Participant & Configuration & Residual & ICC(3,1) & ICC(2,1) & Spearman & Overlap \\
+\midrule
+Eleven decoders & THU & 0.896 [0.857, 0.923] & 0.053 & 0.051 & 0.941 [0.920, 0.957] & 0.888 & 0.951 (0.907) & 0.74 (0.25) \\
+ & CAS & 0.774 [0.595, 0.845] & 0.112 & 0.115 & 0.858 [0.748, 0.913] & 0.768 & 0.859 (0.705) & 0.68 (0.29) \\
+ & THINGS-EEG & 0.940 [0.909, 0.957] & 0.019 & 0.041 & 0.954 [0.928, 0.971] & 0.935 & 0.947 (0.892) & 0.90 (0.25) \\
+\midrule
+Alignment (8) & THU & 0.893 [0.838, 0.924] & 0.070 & 0.037 & 0.954 [0.924, 0.973] & 0.880 & 0.965 (0.933) & 0.80 (0.25) \\
+ & CAS & 0.762 [0.590, 0.849] & 0.145 & 0.093 & 0.876 [0.793, 0.939] & 0.748 & 0.894 (0.726) & 0.71 (0.29) \\
+ & THINGS-EEG & 0.952 [0.926, 0.967] & 0.023 & 0.025 & 0.971 [0.950, 0.985] & 0.946 & 0.961 (0.903) & 0.90 (0.25) \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

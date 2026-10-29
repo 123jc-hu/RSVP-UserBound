@@ -1,0 +1,32 @@
+\begin{table}[H]
+\centering
+\caption{Robustness of the descriptor associations (pooled, $n=122$; THU and CAS only, $n=78$, where stated). The first three rows test $s_\mathrm{ERP}$ over dataset effects; the others test $r_\mathrm{topo}$ over $s_\mathrm{ERP}$. $\Delta R^2_\mathrm{CV}$, permutation $p$, and partial $r$ refer to PRISM; median and minimum partial $r$ and the count of significant increments (permutation $p<0.05$) span the eleven decoders.}
+\label{tab:supp-robustness}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Analysis & $\Delta R^2_\mathrm{CV}$ & Perm. $p$ & Partial $r$ & $p$ & Median $r$ & Min. $r$ & Decoders \\
+\midrule
+$s_\mathrm{ERP}$ over dataset effects, same trials & +0.382 & $1.0\times10^{-3}$ & 0.648 & $1.2\times10^{-15}$ & 0.652 & 0.637 & 11/11 \\
+$s_\mathrm{ERP}$, first $\to$ second half & +0.368 & $1.0\times10^{-3}$ & 0.656 & $4.1\times10^{-16}$ & 0.648 & 0.628 & 11/11 \\
+$s_\mathrm{ERP}$, second $\to$ first half & +0.257 & $1.0\times10^{-3}$ & 0.527 & $6.5\times10^{-10}$ & 0.538 & 0.510 & 11/11 \\
+\midrule
+$r_\mathrm{topo}$, same trials (reference) & +0.025 & 0.010 & 0.257 & 0.005 & 0.262 & 0.236 & 11/11 \\
+Disjoint halves, first $\to$ second & +0.006 & 0.068 & 0.187 & 0.042 & 0.187 & 0.116 & 4/11 \\
+Disjoint halves, second $\to$ first & +0.021 & 0.020 & 0.212 & 0.021 & 0.240 & 0.206 & 11/11 \\
+Disjoint halves, first $\to$ second, logit BA & +0.015 & 0.016 & 0.229 & 0.012 & 0.216 & 0.158 & 7/11 \\
+Disjoint halves, signed maps & -0.000 & 0.197 & 0.140 & 0.130 & 0.114 & 0.015 & 0/11 \\
+Disjoint halves, THU and CAS only & +0.000 & 0.133 & 0.178 & 0.123 & 0.168 & 0.076 & 1/11 \\
+First 10 targets $\to$ second half & -0.010 & 0.694 & 0.034 & 0.714 & 0.028 & 0.005 & 0/11 \\
+First 20 targets $\to$ second half & +0.002 & 0.134 & 0.141 & 0.127 & 0.141 & 0.089 & 1/11 \\
+First 40 targets $\to$ second half & +0.025 & 0.003 & 0.246 & 0.007 & 0.213 & 0.166 & 9/11 \\
+First 80 targets $\to$ second half & +0.013 & 0.021 & 0.214 & 0.020 & 0.193 & 0.133 & 5/11 \\
+Disattenuated $r_\mathrm{topo}$ & +0.031 & 0.002 & 0.276 & 0.002 & 0.290 & 0.261 & 11/11 \\
+Spline control of $s_\mathrm{ERP}$ and reliability & +0.022 & 0.018 & 0.215 & 0.022 & 0.232 & 0.184 & 11/11 \\
+Spline control, disjoint halves & +0.007 & 0.065 & 0.175 & 0.063 & 0.175 & 0.101 & 4/11 \\
+Residual from SNR-only curve & +0.027 & 0.009 & 0.259 & 0.004 & 0.264 & 0.238 & 11/11 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

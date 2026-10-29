@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{THU training-seed robustness. Source splits and background downsampling were fixed; only the training seed changed. Within SD: mean over participants of the across-seed standard deviation. Between SD: standard deviation of seed-averaged participant BA. ICC(3,1) treats seeds as raters. PRISM lead: mean paired difference with a 20{,}000-replicate crossed participant--seed bootstrap 95\% interval.}
+\label{tab:supp-seeds}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}lrrrrrrrl@{}}
+\toprule
+Decoder & 2026 & 2027 & 2028 & Mean & Within SD & Between SD & ICC & PRISM lead \\
+\midrule
+PRISM & 0.8735 & 0.8784 & 0.8769 & 0.8763 & 0.0066 & 0.0597 & 0.983 & --- \\
+DC-tCNN & 0.8602 & 0.8610 & 0.8603 & 0.8605 & 0.0105 & 0.0671 & 0.962 & $+0.0158$ [+0.0110, +0.0204] \\
+PPNN & 0.8610 & 0.8597 & 0.8586 & 0.8598 & 0.0079 & 0.0668 & 0.977 & $+0.0165$ [+0.0113, +0.0219] \\
+EEGNet & 0.8441 & 0.8474 & 0.8493 & 0.8469 & 0.0078 & 0.0657 & 0.983 & $+0.0294$ [+0.0242, +0.0348] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

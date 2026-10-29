@@ -1,0 +1,64 @@
+# Shared defaults. Each run configuration in this folder names the model and dataset and
+# overrides some of these keys.
+
+# Runtime
+use_gpu: true
+deterministic_run: true
+cudnn_benchmark: false
+matmul_precision: highest
+dataset_root: null   # default: $RSVP_DATASET_ROOT, else ./data
+num_workers: 4
+pin_memory: true
+persistent_workers: true
+prefetch_factor: 2
+
+# LOSO protocol
+random_seed: 2026
+held_out_start_id: null   # run only held-out participants in [start, end]
+held_out_end_id: null
+n_fold: null              # run only the first n held-out participants (quick tests)
+exclude_subject_ids: null
+
+# Source participants: 80/20 train/validation split, background downsampling of the training part
+source_val_split_mode: random   # random (class-stratified) | temporal_block
+source_val_block_gap: 10        # temporal_block: trials dropped on each side of the validation block
+source_train_bg_downsample_bg_to_pos_ratio: 1.0
+source_train_bg_downsample_seed: 2026
+
+# Training
+epochs: 400
+subject_batch_size: 32     # trials per participant in a batch
+subjects_per_batch: 32     # participants per batch
+val_batch_size: 1024
+learning_rate: 0.001
+weight_decay: 0.0
+cosine_t_max: 150
+cosine_eta_min_factor: 0.01
+patience: 10
+early_stop_start_epoch: 30
+
+# Source-participant alignment (Supplementary): source_batch_coral | source_batch_mmd | source_batch_dann
+alignment_loss: none
+lambda_align: 0.0
+
+datasets:
+  THU:
+    n_channels: 62
+    fs: 128
+    n_class: 2
+  CAS:
+    n_channels: 62
+    fs: 128
+    n_class: 2
+  THINGS:
+    n_channels: 63
+    fs: 128
+    n_class: 2
+
+models:
+  PRISM:
+    erp_net_n_components: 16          # D, spatial components after W_s
+    erp_net_dropout: 0.3
+    erp_net_activation: gelu
+    erp_net_max_norm: 1.0
+    erp_net_prews_spatial_dropout_prob: 0.1   # channel dropout before W_s, shared across scales

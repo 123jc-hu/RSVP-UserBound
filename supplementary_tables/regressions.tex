@@ -1,0 +1,32 @@
+\begin{table}[H]
+\centering
+\caption{Pooled descriptor regressions of held-out BA for all 17 configurations ($n=122$, descriptors z-scored within dataset, dataset fixed effects). $R^2_\mathrm{CV}$: leave-one-participant-out cross-validated $R^2$. Perm. $p$: 2{,}000 within-dataset permutations of $r_\mathrm{topo}$. Slope $p$: $F$-test of descriptor-by-dataset interactions.}
+\label{tab:supp-regressions}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Configuration & $R^2_\mathrm{CV}$ ($s_\mathrm{ERP}$) & $R^2_\mathrm{CV}$ (both) & $\Delta R^2_\mathrm{CV}$ & Perm. $p$ & Partial $r$ & $p$ & Slope $p$ \\
+\midrule
+PRISM & 0.444 & 0.469 & +0.025 & 0.008 & 0.257 & 0.005 & 0.49 \\
+KnIFE & 0.440 & 0.484 & +0.043 & $5.0\times10^{-4}$ & 0.306 & $7.1\times10^{-4}$ & 0.46 \\
+SCLDGN & 0.465 & 0.490 & +0.025 & 0.009 & 0.253 & 0.006 & 0.44 \\
+EEG-DG & 0.423 & 0.451 & +0.028 & 0.006 & 0.262 & 0.004 & 0.51 \\
+EEGTransferNet & 0.419 & 0.442 & +0.023 & 0.009 & 0.241 & 0.008 & 0.26 \\
+EEGConformer & 0.416 & 0.453 & +0.037 & 0.001 & 0.282 & 0.002 & 0.25 \\
+DC-tCNN & 0.461 & 0.499 & +0.038 & $5.0\times10^{-4}$ & 0.296 & 0.001 & 0.46 \\
+PPNN & 0.431 & 0.456 & +0.026 & 0.006 & 0.260 & 0.004 & 0.68 \\
+PLNet & 0.497 & 0.527 & +0.030 & 0.003 & 0.279 & 0.002 & 0.34 \\
+EEGNet & 0.421 & 0.441 & +0.021 & 0.013 & 0.236 & 0.010 & 0.45 \\
+xDAWN-RG & 0.486 & 0.534 & +0.048 & $5.0\times10^{-4}$ & 0.329 & $2.5\times10^{-4}$ & 0.53 \\
+\midrule
+EEGNet$+$CORAL & 0.417 & 0.443 & +0.026 & 0.004 & 0.247 & 0.007 & 0.21 \\
+EEGNet$+$DANN & 0.429 & 0.449 & +0.021 & 0.015 & 0.235 & 0.010 & 0.39 \\
+EEGNet$+$MMD & 0.414 & 0.436 & +0.021 & 0.011 & 0.238 & 0.009 & 0.47 \\
+PRISM$+$CORAL & 0.438 & 0.464 & +0.027 & 0.006 & 0.261 & 0.004 & 0.52 \\
+PRISM$+$DANN & 0.426 & 0.443 & +0.017 & 0.024 & 0.228 & 0.013 & 0.57 \\
+PRISM$+$MMD & 0.457 & 0.481 & +0.023 & 0.003 & 0.247 & 0.007 & 0.40 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

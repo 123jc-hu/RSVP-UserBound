@@ -1,0 +1,35 @@
+model: PRISM
+dataset: THU
+
+overrides:
+  exp_tag: prism_thu64_d16_bestsofar_prewsdrop010_regionconcat_lmr_m8_trainseed2028
+
+  erp_net_n_components: 16
+  erp_net_dropout: 0.3
+  erp_net_activation: gelu
+  erp_net_prews_spatial_dropout_prob: 0.10
+  erp_net_input_region_projector: sagittal_lmr
+  erp_net_input_region_projector_dim: 8
+  erp_net_input_region_projector_fusion: concat
+
+  held_out_start_id: 1
+  held_out_end_id: 64
+
+  subject_batch_size: 32
+  subjects_per_batch: 32
+
+  learning_rate: 0.001
+  weight_decay: 0.0
+  random_seed: 2028
+  source_split_seed: 2026
+  epochs: 400
+  early_stop_start_epoch: 30
+  patience: 10
+
+  source_train_bg_downsample_bg_to_pos_ratio: 1.0
+  source_train_bg_downsample_seed: 2026
+
+  val_batch_size: 1024
+  deterministic_run: true
+  cudnn_benchmark: false
+  matmul_precision: highest
