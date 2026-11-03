@@ -108,9 +108,10 @@ python scripts/select_d_by_validation.py                      # choice of D
 python scripts/within_vs_cross_subject.py                     # calibration versus calibration-free
 python scripts/plot_figures.py                                # figures -> figures/
 python scripts/build_supplementary_tables.py                  # supplementary tables -> supplementary_tables/
+python scripts/plot_graphical_abstract.py                     # graphical abstract -> figures/
 ```
 
-Outputs are written to `Experiments/analysis/`. `scripts/compute_erp_topo_bank.py` recomputes the
+Outputs are written to `Experiments/analysis/`. `supplementary_tables/` holds the full tables, of which the Supplementary Material shows a selection. `scripts/compute_erp_topo_bank.py` recomputes the
 THU ERP-separation maps of Fig. 4 from the data.
 
 ## License
