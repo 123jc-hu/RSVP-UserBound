@@ -227,7 +227,7 @@ def seeds() -> None:
         "PRISM lead: mean paired difference with a 20{,}000-replicate crossed participant--seed bootstrap "
         "95\\% interval.",
         "tab:supp-seeds", "@{}lrrrrrrrl@{}",
-        "Decoder & 2026 & 2027 & 2028 & Mean & Within SD & Between SD & ICC & PRISM lead", rows, "\\scriptsize"))
+        "Decoder & Seed 1 & Seed 2 & Seed 3 & Mean & Within SD & Between SD & ICC & PRISM lead", rows, "\\scriptsize"))
 
 
 def userbound() -> None:
