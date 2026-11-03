@@ -63,7 +63,7 @@ def arrow(ax, xy0, xy1):
 
 
 def main() -> None:
-    plt.rcParams.update({"font.family": "DejaVu Sans", "axes.linewidth": 0.5})
+    plt.rcParams.update({"font.family": "DejaVu Sans", "axes.linewidth": 0.5, "pdf.fonttype": 42})
     fig = plt.figure(figsize=(W, H))
     fig.patch.set_facecolor("white")
     halves = pd.read_csv(CIRC / "subject_ba_by_half.csv")
