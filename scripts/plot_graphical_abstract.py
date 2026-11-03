@@ -70,7 +70,8 @@ def main() -> None:
     axes_df = pd.read_csv(CIRC / "subject_axes_by_split.csv")
 
     # title
-    fig.text(0.5, 0.920, TITLE, ha="center", va="center", fontsize=8.6, fontweight="bold", color=INK,
+    # Left-aligned: the top-right corner stays free for the page stamp of the submission system.
+    fig.text(0.012, 0.920, TITLE, ha="left", va="center", fontsize=8.6, fontweight="bold", color=INK,
              linespacing=1.15)
 
     # ------------------------------------------------------------------ problem
